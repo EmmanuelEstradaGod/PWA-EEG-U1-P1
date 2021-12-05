@@ -12,7 +12,7 @@ self.addEventListener("activate",() => {
 
 self.addEventListener("fetch", (event) => {
     if (event.request.url.includes(".jpg")) {
-        let newResp = fetch("/image/tiburcio.jpg")
+        let newResp = fetch("PWA-EEG-U1-P1/image/tiburcio.jpg");
         console.log("Es una imagen");
         event.respondWith(newResp);
     }
